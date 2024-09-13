@@ -22,6 +22,20 @@ export default function ProductsList({ products, initialCartProducts = [] }: { p
     setCartProducts(updatedCartProducts);
   }
 
+  async function removeFromCart(productId: string) {
+    const response = await fetch('https://didactic-spork-qv5rg559vw73xgq9-3000.app.github.dev/api/users/2/cart', {
+      method: 'DELETE',
+      body: JSON.stringify({
+        productId,
+      }),
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    });
+    const updatedCartProducts = await response.json();
+    setCartProducts(updatedCartProducts);
+  }
+
   function productIsInCart(productId: string) {
     return cartProducts.some(cp => cp.id === productId);
   }
@@ -50,7 +64,7 @@ export default function ProductsList({ products, initialCartProducts = [] }: { p
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
               onClick={(e) => {
                 e.preventDefault();
-                console.log('Removing from cart... (Not implemented)');
+                removeFromCart(product.id);
               }}>Remove from Cart</button>
             ) : (
               <button
