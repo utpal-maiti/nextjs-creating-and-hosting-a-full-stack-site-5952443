@@ -1,6 +1,12 @@
 # Next.js: Creating and Hosting a Full-Stack Site
 This is the repository for the LinkedIn Learning course `Next.js: Creating and Hosting a Full-Stack Site`. The full course is available from [LinkedIn Learning][lil-course-url].
 
+![lil-thumbnail-url]
+
+## Course Description
+
+Many web developers focus solely on one part of an application: the front end, the back end, the database, or the hosting platform. However, JavaScript has become such a pervasive language that it can be used for all of these parts. This means that a single JavaScript developer can now create an entire web application, a task that used to require an entire team. In this course, full-stack development instructor Shaun Wassell shows developers how to do exactly that by using Next.js to build a full-stack application. Find out how to build basic React interfaces in Next.js, add back-end functionality to Next.js applications, make network requests, and finally host a full-stack Next.js application so that anyone can use it.
+
 _See the readme file in the main branch for updated instructions and information._
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
@@ -20,15 +26,17 @@ To resolve this issue:
     Add changes to git using this command: git add .
 	Commit changes using this command: git commit -m "some message"
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+## Instructor
 
+Shaun Wassell
+
+Senior Software Engineer, Educator at CBT Nuggets
+
+
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/shaun-wassell?u=104).
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+[lil-course-url]: https://www.linkedin.com/learning/next-js-creating-and-hosting-a-full-stack-site
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D560DAQHXePcdOQve_w/learning-public-crop_675_1200/learning-public-crop_675_1200/0/1730333299899?e=2147483647&v=beta&t=rjCaYb0ANoXYa7lncnl68kQ4Ke6cXk60CBXlxXl4R6w
 
